@@ -1,0 +1,95 @@
+MITBIH
+
+*********************Multi-Classification*********************
+Origin data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 2.52559                0.798712
+     64                 4.82808                0.802265
+     128                8.04164                0.816341
+     256                11.4919                0.817895
+
+FFT data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 2.29708                0.799512
+     64                 4.05385                0.822469
+     128                6.12896                0.832993
+     256                9.04278                0.833659
+
+
+*********************Binary-Classification*********************
+FFT data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 0.46669                0.818472
+     64                 0.72004                0.832549
+     128                1.08234                0.843872
+     256                1.63985                0.838055
+
+Origin data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 0.38322                0.805284
+     64                 0.68081                0.814210
+     128                1.04468                0.838277
+     256                1.60259                0.839032
+
+
+Half FFT data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 0.42402                0.818739
+     64                 0.70916                0.833792
+     128                1.08712                0.843206
+     256                1.70986                0.836456
+
+DWT data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 0.39461                0.805151
+     64                 0.68500                0.814121
+     128                1.05424                0.840674
+     256                1.60488                0.836990
+
+WaveDec data：(level = 2)
+Dimensionality     Training Time(min)          Accuracy
+     32                 0.42552                0.805373
+     64                 0.68859                0.814076
+     128                1.10317                0.838099
+     256                1.68133                0.838099
+
+Mult data：
+Dimensionality     Training Time(min)          Accuracy
+     32                 0.42399                0.805373
+     64                 0.75697                0.838277
+     128                1.06869                0.855995
+     256                1.88642                0.867229
+     512                2.45801                0.888410
+     600                2.53260                0.885568
+     768                3.04827                0.886234
+     1024               3.97300                0.882682
+
+
+Src_FFT+DWT data:
+Dimensionality     Training Time(min)          Accuracy
+     256                1. 64758               0.865586
+     512                2.277950               0.886368
+     600                2.531360               0.885391
+
+
+FFT+DWT data:
+Dimensionality     Training Time(min)          Accuracy
+     600                2.65316                0.882105 
+     512                2.31357                0.889876
+     500                2.31562                0.885790
+     256                1.80271                0.859236     
+
+
+
+SELF
+FFT+DWT data:
+Dimensionality           Accuracy
+     16                  0.597701 
+     32                  0.758621
+     40                  0.781609
+     45                  0.781609
+     50                  0.827586
+     55                  0.793103
+     64                  0.793103
+     80                  0.747126
+     128                 0.689655
