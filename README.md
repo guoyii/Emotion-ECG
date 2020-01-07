@@ -11,12 +11,12 @@ Result
 =====  
 Data_H5
 ______  
-  A floder where data is stored   
+  A folder where data is stored   
 
 model_LinearSVC
 ______
-  A floder for LinearSVC  
+  A folder for LinearSVC  
 
 model_pca
 ______  
-  A floder for PCA  
+  A folder for PCA  
