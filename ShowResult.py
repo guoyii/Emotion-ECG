@@ -4,12 +4,12 @@ import numpy as np
 import h5py
 data_h5_path = "V:/users/gy/MyProject/ECG/result/Data_H5"
 
-print("\n******************   加载原始数据   ******************")
+
 data_origin = h5py.File(data_h5_path + "/data_src.h5", 'r')
 X_origin = np.array(data_origin['X'][:])
 labels_origin = np.array(data_origin['labels'][:])
 
-print("\n******************   加载傅里叶数据   ******************")
+
 data_fft = h5py.File(data_h5_path + "/data_fft.h5", 'r')
 X_fft = np.array(data_fft['X'][:])
 labels_fft = np.array(data_fft['labels'][:])

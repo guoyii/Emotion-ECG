@@ -1,7 +1,7 @@
-from sklearn.decomposition import PCA  ## 用于PCA降维，需要一起训练
+from sklearn.decomposition import PCA 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-                                       ## 标准化处理
+                            
 from utils import *
 import numpy as np
 import numpy.fft as fft 
@@ -51,7 +51,6 @@ def read_dataPath(data_path):
     labels = [] 
     indexes = []
     for i, data_folder in enumerate(os.listdir(data_path)):
-        print("读取第{}个数据路径...............".format(i))
         for data in os.listdir(data_path +"/" + data_folder):
             X_path_one = data_path + "/" + data_folder + "/" + data
 
@@ -72,7 +71,6 @@ def read_dataPath(data_path):
 def read_X(X):
     X_src = np.zeros((len(X), data_length), np.float64)
     for i in range(len(X)):
-        print("加入第{}个个体数据...............".format(i))
         X_src[i] = read_data(X[i])
     return X_src
 
@@ -112,5 +110,5 @@ for i in range(len(X_ss)):
 # data_path = out_path + "/{}_{}_frequency.mat".format(classify, index)
 # a = (loadmat(data_path)["data"]).flatten() 
 # plt.figure()
-# plt.plot(a), plt.title("查看 {}_{}_frequency.mat".format(classify, index))
+# plt.plot(a), plt.title("{}_{}_frequency.mat".format(classify, index))
 # plt.show()

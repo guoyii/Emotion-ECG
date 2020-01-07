@@ -5,3 +5,18 @@ Guide
   `ShowResult.py`:Show some results  
   `test.py`:Generate the data we want  
   `utils.py`:Partial functions used  
+  `TEXT.txt`:Experimental results
+
+Result
+=====  
+Data_H5
+______  
+  A floder where data is stored   
+
+model_LinearSVC
+______
+  A floder for LinearSVC  
+
+model_pca
+______  
+  A floder for PCA  
