@@ -17,5 +17,6 @@ class Stack_Bi_LSTM(nn.Module):
         _,(x,_) = self.lstm(x)
         x = self.fc1(x.view(self.num_layers, self.num_directions, x.shape[1], self.hidden_size)[-1,:,:,:].sum(0))
         x = self.relu(x)
+        output_feature = x
         x = self.fc2(x)
-        return x
+        return x,output_feature

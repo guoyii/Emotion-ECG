@@ -16,7 +16,7 @@ def val_epoch(net,loader,cost):
     for batch_idx, (sequence, label) in enumerate(loader):
         sequence = sequence.float().cuda() #GPU
         label = label.float().cuda()  #GPU
-        predict = net(sequence.permute(1,0,2))
+        predict,_ = net(sequence.permute(1,0,2))
         loss = cost(predict,label.long())
         loss_meter.update(loss.item())
         predict = predict.data.cpu().numpy()
@@ -37,7 +37,7 @@ def train_epoch(net,loader,optimizer,cost):
         sequence = sequence.float().cuda()  #GPU
         label = label.float().cuda()  #GPU
         optimizer.zero_grad()
-        predict = net(sequence.permute(1,0,2))
+        predict,_ = net(sequence.permute(1,0,2))
         loss = cost(predict, label.long())
         loss.backward()
         optimizer.step()
