@@ -9,17 +9,9 @@ Guide
 
 Result
 =====  
-Data_H5
-______  
-  A folder where data is stored   
-
-model_LinearSVC
-______
-  A folder for LinearSVC  
-
-model_pca
-______  
-  A folder for PCA  
+  ***Data_H5***:A folder where data is stored   
+  ***model_LinearSVC***:A folder for LinearSVC  
+  ***model_pca***:A folder for PCA  
 
 data_preprocessing
 ===== 
