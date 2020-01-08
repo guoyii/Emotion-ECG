@@ -15,23 +15,23 @@ Preprocess
 
 Result
 =====  
-  ***Data_H5***: FFT data、 DWT data and so on. 
-  >>>>>data_self_dwt.h5  
-  >>>>>data_self_fft.h5  
-  >>>>>data_self_src.h5  
-  >>>>> ......  
+  ***Data_H5***: FFT data、 DWT data and so on.    
+  > data_self_dwt.h5  
+  > data_self_fft.h5  
+  > data_self_src.h5  
+  >  ......  
   ***model_LinearSVC***: LinearSVC models trained with FFT and DWT data to find the best dimension.  
-  >>>>>model_lsvc_fft+dwt_16.pkl  
-  >>>>>model_lsvc_fft+dwt_32.pkl  
-  >>>>>model_lsvc_fft+dwt_64.pkl  
-  >>>>> ...... 
+  > model_lsvc_fft+dwt_16.pkl  
+  > model_lsvc_fft+dwt_32.pkl  
+  > model_lsvc_fft+dwt_64.pkl  
+  >  ......  
   ***model_pca***: PCA  models trained with FFT and DWT data which is used as a dimension reduction.  
-  >>>>>model_pca_fft+dwt_16.pkl  
-  >>>>>model_pca_fft+dwt_16.pkl  
-  >>>>>model_pca_fft+dwt_16.pkl  
-  >>>>> ...... 
+  > model_pca_fft+dwt_16.pkl  
+  > model_pca_fft+dwt_16.pkl  
+  > model_pca_fft+dwt_16.pkl  
+  >  ......  
   ***out***: Frequency domain characteristics of ecg signals.  
-  >>>>>fear_1_frequency.mat  
-  >>>>>fear_2_frequency.mat  
-  >>>>>joy_10_frequency.mat  
-  >>>>> ...... 
+  > fear_1_frequency.mat  
+  > fear_2_frequency.mat  
+  > joy_10_frequency.mat  
+  >  ......  
