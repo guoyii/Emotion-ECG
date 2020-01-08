@@ -9,7 +9,7 @@ Guide
 
 Result
 =====  
-Data_H5
+Data_H5 sc
 ______  
   A folder where data is stored   
 
