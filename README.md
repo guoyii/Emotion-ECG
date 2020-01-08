@@ -15,7 +15,7 @@ Preprocess
 
 Result
 =====  
-  ***Data_H5***: FFT data、 DWT data and so on.    
+  ***Data_H5***: FFT data、 DWT data and so on.  
   > data_self_dwt.h5  
   > data_self_fft.h5  
   > data_self_src.h5  
