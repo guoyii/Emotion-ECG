@@ -26,3 +26,5 @@ data_preprocessing
   `rrinterval_seg.m`: MIT_BIH dataset segment, based on label_time saved in ATRTIME 
   
   `Q1.m`: our ecg data preprocess, denoise is not included, which is done via Matlab 1-D Wavelet toolbox
+  
+  `rdata.m`: MIT_BIH dataset preprocess, including how to read the file of 'hea, art...', from Machine_Learning_ECG-master
