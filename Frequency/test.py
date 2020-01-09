@@ -67,7 +67,6 @@ def read_dataPath(data_path):
     return X, labels, indexes
 
 
-
 def read_X(X):
     X_src = np.zeros((len(X), data_length), np.float64)
     for i in range(len(X)):

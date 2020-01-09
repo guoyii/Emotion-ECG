@@ -49,7 +49,6 @@ def read_data(X, labels):
     return X_src, labels
 
 
-
 ##********************************************************************************************************
 def myfft(X):
     X_fft = np.zeros((len(X), data_length), np.float64)
@@ -63,7 +62,6 @@ def myfft(X):
     return X_fft
 
 
-
 ##********************************************************************************************************
 def mydwt(X):
     X_dwt = np.zeros((len(X), data_length), np.float64)
@@ -72,7 +70,6 @@ def mydwt(X):
         X_dwt[i][:int(data_length/2)] = cA.flatten()
         X_dwt[i][int(data_length/2):data_length] = cD.flatten()
     return X_dwt
-
 
 
 ##********************************************************************************************************
@@ -84,7 +81,6 @@ def mywavedec(X, level = 2):
         X_wavedec[i][int(data_length/2):int(int(data_length/2)+int(data_length/2)/2)] = cD2.flatten()
         X_wavedec[i][int(int(data_length/2)+int(data_length/2)/2):data_length] = cA2.flatten()
     return X_wavedec
-
 
 
 ##********************************************************************************************************

@@ -34,9 +34,6 @@ else:
     f.close()
 
 
-
-
-
 data_name = "data_self_fft.h5"
 
 ##********************************************************************************************************
@@ -66,7 +63,6 @@ else:
     f.create_dataset('X_dwt', data=X_dwt)
     f.create_dataset('labels', data=labels)
     f.close()
-
 
 
 data_name = "data_self_wavedec.h5"
